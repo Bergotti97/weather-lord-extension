@@ -1,0 +1,41 @@
+{
+  "name": "Weather Lord Extension",
+  "version": "1.0",
+  "description": "My awesome extension which gives user a chance to control weather",
+    "background": {
+    "script": ["src/js/background.js"]
+    },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/otval16.png",
+      "32": "images/otval32.png",
+      "48": "images/otval64.png",
+      "128": "images/otval128.png"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "geolocation",
+    "storage",
+    "https://api.weather.yandex.ru/v2/informers*",
+    "https://mail.google.com/mail/u/0/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["src/js/content.js"]
+    },
+    {
+      "matches": ["https://mail.google.com/*"],
+      "css": ["src/css/content.css"]
+    }
+  ],
+  "icons": {
+    "16": "images/otval16.png",
+    "32": "images/otval32.png",
+    "48": "images/otval64.png",
+    "128": "images/otval128.png"
+  },
+  "manifest_version": 2
+}
