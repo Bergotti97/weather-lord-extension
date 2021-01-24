@@ -1,5 +1,5 @@
 <h1>My awesome Weather Lord Extension</h1>
-<h5>(In fact its just a simple extension to integrate weather data to a new gmail message)</h5>
+<h5>(In fact it`s just a simple extension to integrate weather data to a new gmail message)</h5>
 <h2>Simple way to use this extension</h2>
 <ol>
 <li>Download extension</li>
